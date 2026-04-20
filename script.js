@@ -1,8 +1,9 @@
 let tbody = document.getElementById("output");
 
+tbody.innerHTML = `<tr id="loading"><td colspan="2">Loading...</td></tr>`
 let promise1 = () => {
   return new Promise((resolve) => {
-    let time = Math.random() * 2 + 1; 
+    let time = Math.random() * 3 + 1; 
     setTimeout(() => {
       resolve(time);
     }, time * 1000); 
